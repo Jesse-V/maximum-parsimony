@@ -5,7 +5,7 @@
 
 
 const std::size_t SEQUENCE_COUNT = 5;
-const std::size_t SEQUENCE_LENGTH = 16;
+const std::size_t SEQUENCE_LENGTH = 8;
 
 
 int main(int argc, char** argv)
@@ -22,8 +22,10 @@ int main(int argc, char** argv)
         Node b = sequences.back();
         sequences.pop_back();
 
+        //std::cout << a.score_ << "," << b.score_ << std::endl;
+
         std::vector<short> newSequence(SEQUENCE_LENGTH, 0);
-        int newScore = 0;
+        int newScore = a.score_;
         for (std::size_t j = 0; j < SEQUENCE_LENGTH; j++)
         {
             auto aAndb = a.sequence_[j] & b.sequence_[j];
