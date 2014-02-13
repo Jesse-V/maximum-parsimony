@@ -2,60 +2,95 @@
 #include "main.hpp"
 #include <string>
 #include <iostream>
+#include <limits>
 
 
-const std::size_t SEQUENCE_COUNT = 5;
-const std::size_t SEQUENCE_LENGTH = 8;
+const std::size_t SEQUENCE_COUNT = 256;
+const std::size_t SEQUENCE_LENGTH = 30;
 
 
 int main(int argc, char** argv)
 {
-    std::vector<Node> sequences;
+    std::vector<Node> nodes;
     for (std::size_t j = 0; j < SEQUENCE_COUNT; j++)
-        sequences.push_back(Node(getSequence(SEQUENCE_LENGTH)));
+        nodes.push_back(Node(getSequence(SEQUENCE_LENGTH), NULL, NULL));
 
-    while (sequences.size() > 1)
+    while (nodes.size() > 1)
     {
-        Node a = sequences.back();
-        sequences.pop_back();
+        std::vector<Node> newList;
 
-        Node b = sequences.back();
-        sequences.pop_back();
-
-        //std::cout << a.score_ << "," << b.score_ << std::endl;
-
-        std::vector<short> newSequence(SEQUENCE_LENGTH, 0);
-        int newScore = a.score_;
-        for (std::size_t j = 0; j < SEQUENCE_LENGTH; j++)
+        while (!nodes.empty())
         {
-            auto aAndb = a.sequence_[j] & b.sequence_[j];
-            if (aAndb == 0)
+            if (nodes.size() == 1)
             {
-                newSequence[j] = a.sequence_[j] | b.sequence_[j];
-                newScore++;
+                newList.push_back(Node(nodes[0].sequence_, &nodes[0], NULL));
+                nodes.erase(nodes.begin());
             }
             else
-                newSequence[j] = aAndb;
+            {
+                List blank;
+                std::pair<List, int> best = std::make_pair(blank,
+                                            std::numeric_limits<int>::max());
+                std::size_t bestIndex = 0;
+                for (std::size_t j = 1; j < nodes.size(); j++)
+                {
+                    auto result = score(nodes[0].sequence_, nodes[j].sequence_);
+                    if (result.second < best.second)
+                    {
+                        best = result;
+                        bestIndex = j;
+                    }
+                }
+
+                //std::cout << best.second << std::endl;
+
+                newList.push_back(Node(best.first, &nodes[0], &nodes[bestIndex]));
+                nodes.erase(nodes.begin() + (const long)bestIndex);
+                nodes.erase(nodes.begin());
+            }
         }
 
-        sequences.push_back(Node(newSequence, newScore));
+        nodes = newList;
     }
 
-    for (std::size_t j = 0; j < SEQUENCE_LENGTH; j++)
-        std::cout << sequences[0].sequence_[j] << " ";
-    std::cout << std::endl << "Score: " << sequences[0].score_ << std::endl;
+    std::cout << score(nodes[0].left_->sequence_, nodes[0].right_->sequence_).second << std::endl;
+    std::cout << nodes.size() << std::endl;
+
+    printTree(&nodes[0], 0);
 
     return EXIT_SUCCESS;
 }
 
 
 
-std::vector<short> getSequence(std::size_t length)
+std::pair<List, int> score(const List& a, const List& b)
+{
+    List result(SEQUENCE_LENGTH, 0);
+    int score = 0;
+
+    for (std::size_t j = 0; j < SEQUENCE_LENGTH; j++)
+    {
+        auto aAndb = a[j] & b[j];
+        if (aAndb == 0)
+        {
+            result[j] = a[j] | b[j];
+            score++;
+        }
+        else
+            result[j] = aAndb;
+    }
+
+    return std::make_pair(result, score);
+}
+
+
+
+List getSequence(std::size_t length)
 {
     auto mersenneTwister = getMersenneTwister();
     std::uniform_int_distribution<int> randomInt(1, 4);
 
-    std::vector<short> sequence;
+    List sequence;
     for (std::size_t j = 0; j < length; j++)
     {
         switch (randomInt(mersenneTwister))
@@ -77,66 +112,27 @@ std::vector<short> getSequence(std::size_t length)
 
     return sequence;
 }
-/*
 
 
-std::string getDNA(std::size_t length)
+
+void printTree(const Node* node, int depth)
 {
-    auto mersenneTwister = getMersenneTwister();
-    std::uniform_int_distribution<int> randomInt(1, 4);
+    if (node == NULL)
+        return;
 
-    std::string dna(length, 'A');
+    std::cout << depth << std::endl;
 
-    for (std::size_t j = 0; j < length; j++)
-    {
-        switch (randomInt(mersenneTwister))
-        {
-            case 1:
-                dna[j] = 'A';
-                break;
-            case 2:
-                dna[j] = 'T';
-                break;
-            case 3:
-                dna[j] = 'C';
-                break;
-            case 4:
-                dna[j] = 'G';
-                break;
-        }
-    }
+    printTree(node->left_, depth + 1);
 
-    return dna;
+    for (int j = 0; j < depth; j++)
+        std::cout << " ";
+    for (std::size_t j = 0; j < SEQUENCE_LENGTH; j++)
+        std::cout << node->sequence_[j];
+    std::cout << std::endl;
+
+    printTree(node->right_, depth + 1);
 }
 
-
-
-std::string toNumerical(const std::string& str)
-{
-    std::string converted(str);
-
-    for (std::size_t j = 0; j < str.size(); j++)
-    {
-        switch (str[j])
-        {
-            case 'A' :
-                converted[j] = 0x1;
-                break;
-            case 'T' :
-                converted[j] = 0x2;
-                break;
-            case 'C' :
-                converted[j] = 0x4;
-                break;
-            case 'G' :
-                converted[j] = 0x8;
-                break;
-        }
-    }
-
-    return converted;
-}
-*/
 
 
 std::mt19937 getMersenneTwister()

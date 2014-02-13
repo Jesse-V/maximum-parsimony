@@ -5,23 +5,23 @@
 #include <algorithm>
 #include <string>
 
-struct Node
+typedef std::vector<unsigned long> List;
+
+class Node
 {
-    Node(const std::vector<short>& sequence) :
-        sequence_(sequence), score_(0)
-    {}
+    public:
+        Node(const List& sequence, Node* left, Node* right) :
+            sequence_(sequence), left_(left), right_(right)
+        {}
 
-    Node(const std::vector<short>& sequence, int score) :
-        sequence_(sequence), score_(score)
-    {}
-
-    std::vector<short> sequence_;
-    int score_;
+        List sequence_;
+        Node* left_ = NULL;
+        Node* right_ = NULL;
 };
 
-std::vector<short> getSequence(std::size_t length);
-std::string getDNA(std::size_t length);
-std::string toNumerical(const std::string& str);
+List getSequence(std::size_t length);
+std::pair<List, int> score(const List& a, const List& b);
+void printTree(const Node* node, int depth);
 std::mt19937 getMersenneTwister();
 
 #endif
