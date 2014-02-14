@@ -1,29 +1,30 @@
 
 #include "main.hpp"
+#include <algorithm>
 #include <string>
 #include <iostream>
 #include <limits>
 
 
-const std::size_t SEQUENCE_COUNT = 256;
-const std::size_t SEQUENCE_LENGTH = 30;
+const std::size_t SEQUENCE_COUNT = 129;
+const std::size_t SEQUENCE_LENGTH = 120;
 
 
 int main(int argc, char** argv)
 {
-    std::vector<Node> nodes;
+    std::vector<Node*> nodes;
     for (std::size_t j = 0; j < SEQUENCE_COUNT; j++)
-        nodes.push_back(Node(getSequence(SEQUENCE_LENGTH), NULL, NULL));
+        nodes.push_back(new Node(getSequence(SEQUENCE_LENGTH), NULL, NULL));
 
     while (nodes.size() > 1)
     {
-        std::vector<Node> newList;
+        std::vector<Node*> newList;
 
         while (!nodes.empty())
         {
             if (nodes.size() == 1)
             {
-                newList.push_back(Node(nodes[0].sequence_, &nodes[0], NULL));
+                newList.push_back(new Node(nodes[0]->sequence_, nodes[0], NULL));
                 nodes.erase(nodes.begin());
             }
             else
@@ -34,7 +35,7 @@ int main(int argc, char** argv)
                 std::size_t bestIndex = 0;
                 for (std::size_t j = 1; j < nodes.size(); j++)
                 {
-                    auto result = score(nodes[0].sequence_, nodes[j].sequence_);
+                    auto result = score(nodes[0]->sequence_, nodes[j]->sequence_);
                     if (result.second < best.second)
                     {
                         best = result;
@@ -42,9 +43,7 @@ int main(int argc, char** argv)
                     }
                 }
 
-                //std::cout << best.second << std::endl;
-
-                newList.push_back(Node(best.first, &nodes[0], &nodes[bestIndex]));
+                newList.push_back(new Node(best.first, nodes[0], nodes[bestIndex]));
                 nodes.erase(nodes.begin() + (const long)bestIndex);
                 nodes.erase(nodes.begin());
             }
@@ -53,10 +52,13 @@ int main(int argc, char** argv)
         nodes = newList;
     }
 
-    std::cout << score(nodes[0].left_->sequence_, nodes[0].right_->sequence_).second << std::endl;
-    std::cout << nodes.size() << std::endl;
+    std::cout << "Comparison of first two children: " <<
+        score(nodes[0]->left_->sequence_, nodes[0]->right_->sequence_).second <<
+        std::endl;
 
-    printTree(&nodes[0], 0);
+    std::cout << "In-order traversal of tree:" << std::endl;
+    printTree(nodes[0], 0);
+    std::cout << "End of in-order traversal of tree." << std::endl;
 
     return EXIT_SUCCESS;
 }
@@ -120,14 +122,36 @@ void printTree(const Node* node, int depth)
     if (node == NULL)
         return;
 
-    std::cout << depth << std::endl;
-
     printTree(node->left_, depth + 1);
 
-    for (int j = 0; j < depth; j++)
-        std::cout << " ";
-    for (std::size_t j = 0; j < SEQUENCE_LENGTH; j++)
-        std::cout << node->sequence_[j];
+    for (int j = 0; j < depth - 1; j++)
+        std::cout << "    ";
+    std::cout << "|--";
+
+    if (node->right_ != NULL && node->right_ != NULL)
+        std::cout << score(node->left_->sequence_, node->right_->sequence_).second;
+    else
+    {
+        for (std::size_t j = 0; j < std::min(100, (int)SEQUENCE_LENGTH); j++)
+        {
+            switch(node->sequence_[j])
+            {
+                case 1:
+                    std::cout << "A";
+                    break;
+                case 2:
+                    std::cout << "T";
+                    break;
+                case 4:
+                    std::cout << "C";
+                    break;
+                case 8:
+                    std::cout << "G";
+                    break;
+            }
+        }
+    }
+
     std::cout << std::endl;
 
     printTree(node->right_, depth + 1);
