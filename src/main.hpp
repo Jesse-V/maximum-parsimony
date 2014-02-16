@@ -24,8 +24,8 @@ class Node
 };
 
 List getSequence();
-std::pair<List, int> score(const List& a, const List& b);
-std::pair<List, int> scoreSSE(const List& a, const List& b);
+std::pair<List, int> score(const Node* nodeA, const Node* nodeB);
+std::pair<__m128*, int> scoreSSE(const Node* nodeA, const Node* nodeB);
 void printTree(const Node* node, int depth);
 std::mt19937 getMersenneTwister();
 

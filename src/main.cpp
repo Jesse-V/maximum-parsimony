@@ -35,7 +35,7 @@ int main(int argc, char** argv)
                 std::size_t bestIndex = 0;
                 for (std::size_t j = 1; j < nodes.size(); j++)
                 {
-                    auto result = score(nodes[0]->sequence_, nodes[j]->sequence_);
+                    auto result = score(nodes[0], nodes[j]);
                     if (result.second < best.second)
                     {
                         best = result;
@@ -53,11 +53,15 @@ int main(int argc, char** argv)
     }
 
     std::cout << "Comparison of first two children: " <<
-        score(nodes[0]->left_->sequence_, nodes[0]->right_->sequence_).second <<
+        score(nodes[0]->left_, nodes[0]->right_).second <<
+        std::endl;
+
+    std::cout << "Comparison of first two children: " <<
+        scoreSSE(nodes[0]->left_, nodes[0]->right_).second <<
         std::endl;
 
     std::cout << "In-order traversal of tree:" << std::endl;
-    printTree(nodes[0], 0);
+    //printTree(nodes[0], 0);
     std::cout << "End of in-order traversal of tree." << std::endl;
 
     return EXIT_SUCCESS;
@@ -65,17 +69,18 @@ int main(int argc, char** argv)
 
 
 
-std::pair<List, int> score(const List& a, const List& b)
+std::pair<List, int> score(const Node* nodeA, const Node* nodeB)
 {
     List result = new unsigned long[SEQUENCE_LENGTH];
     int score = 0;
 
     for (std::size_t j = 0; j < SEQUENCE_LENGTH; j++)
     {
-        auto aAndb = a[j] & b[j];
+        auto a = nodeA->sequence_[j], b = nodeB->sequence_[j];
+        auto aAndb = a & b;
         if (aAndb == 0)
         {
-            result[j] = a[j] | b[j];
+            result[j] = a | b;
             score++;
         }
         else
@@ -87,21 +92,34 @@ std::pair<List, int> score(const List& a, const List& b)
 
 
 
-std::pair<List, int> scoreSSE(const List& a, const List& b)
+std::pair<__m128*, int> scoreSSE(const Node* nodeA, const Node* nodeB)
 {
-    List result = new unsigned long[SEQUENCE_LENGTH];
-    int score = 0;
+    static const __m128 zero = _mm_set1_ps(0.f);
+    static const auto length = SEQUENCE_LENGTH / 4;
 
-    for (std::size_t j = 0; j < SEQUENCE_LENGTH; j++)
+    __m128* result = new __m128[length];
+    for (std::size_t j = 0; j < length; j++)
     {
-        auto aAndb = a[j] & b[j];
-        if (aAndb == 0)
-        {
-            result[j] = a[j] | b[j];
-            score++;
-        }
-        else
-            result[j] = aAndb;
+        auto a = nodeA->sequenceSSE_[j];
+        auto b = nodeB->sequenceSSE_[j];
+
+        auto aAndB = _mm_and_ps(a, b);
+        auto comp  = _mm_cmpeq_ps(zero, aAndB);
+        auto c     = _mm_and_ps(comp, _mm_or_ps(a, b));
+        auto d     = _mm_or_ps(c, aAndB);
+
+        result[j] = d;
+    }
+
+    auto values = reinterpret_cast<unsigned long*>(&result);
+
+    int score = 0;
+    for (int j = 0; j < SEQUENCE_LENGTH; j += 4)
+    {
+        score += !values[j + 0];
+        score += !values[j + 1];
+        score += !values[j + 2];
+        score += !values[j + 3];
     }
 
     return std::make_pair(result, score);
@@ -151,7 +169,7 @@ void printTree(const Node* node, int depth)
     std::cout << "|--";
 
     if (node->right_ != NULL && node->right_ != NULL)
-        std::cout << score(node->left_->sequence_, node->right_->sequence_).second;
+        std::cout << score(node->left_, node->right_).second;
     else
     {
         for (std::size_t j = 0; j < std::min(100, (int)SEQUENCE_LENGTH); j++)
