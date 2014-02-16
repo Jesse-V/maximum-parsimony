@@ -4,10 +4,12 @@
 #include <string>
 #include <iostream>
 #include <limits>
+#include <memory.h>
 
 
 const std::size_t SEQUENCE_COUNT = 8;
 const std::size_t SEQUENCE_LENGTH = 16;
+const int UNITS_PER_SSE = 16;
 
 
 int main(int argc, char** argv)
@@ -94,29 +96,24 @@ std::pair<uint8_t*, int> score(const Node* nodeA, const Node* nodeB)
 
 std::pair<__m128i*, int> scoreSSE(const Node* nodeA, const Node* nodeB)
 {
-    static __m128i zero = _mm_set1_ps(0.f), comp, tempOr, a, b, r;
-    static uint8_t* aUnit = reinterpret_cast<uint8_t*>(&a);
-    static uint8_t* bUnit = reinterpret_cast<uint8_t*>(&b);
+    static __m128i zero = _mm_set1_ps(0.f), comp, aOrB, a, b, r;
     static uint8_t* rUnit = reinterpret_cast<uint8_t*>(&r);
 
     int score = 0;
-    __m128i* result = new __m128i[SEQUENCE_LENGTH / 16];
-    for (int j = 0; j < SEQUENCE_LENGTH - 15; j += 16)
+    __m128i* result = new __m128i[SEQUENCE_LENGTH / UNITS_PER_SSE];
+    for (int j = 0; j <= SEQUENCE_LENGTH - UNITS_PER_SSE; j += UNITS_PER_SSE)
     {
-        for (int k = 0; k < 16; k++)
-        {
-            aUnit[k] = nodeA->sequence_[j + k];
-            bUnit[k] = nodeB->sequence_[j + k];
-        }
+        memcpy(&a, nodeA->sequence_, sizeof(__m128i));
+        memcpy(&b, nodeB->sequence_, sizeof(__m128i));
 
         r = _mm_and_si128(a, b);
-        for (int k = 0; k < 16; k++)
+        for (int k = 0; k < UNITS_PER_SSE; k++)
             score += !(int)rUnit[k];
 
-        tempOr = _mm_or_si128(a, b);
+        aOrB = _mm_or_si128(a, b);
         comp = _mm_cmpeq_epi8(zero, r);
-        comp = _mm_and_si128(comp, tempOr);
-        result[j / 16] = _mm_or_si128(comp, r);
+        comp = _mm_and_si128(comp, aOrB);
+        result[j / UNITS_PER_SSE] = _mm_or_si128(comp, r);
     }
 
     return std::make_pair(result, score);
