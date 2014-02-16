@@ -1,0 +1,1627 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"glm",
+				"glm::vec3"
+			],
+			[
+				"sequ",
+				"sequence_"
+			],
+			[
+				"seq",
+				"sequence_"
+			],
+			[
+				"right",
+				"right_"
+			],
+			[
+				"left",
+				"left_"
+			],
+			[
+				"score",
+				"score_"
+			],
+			[
+				"sq",
+				"sequence_"
+			],
+			[
+				"look",
+				"lookingFor"
+			],
+			[
+				"size",
+				"size_t"
+			],
+			[
+				"filena",
+				"filenames"
+			],
+			[
+				"poin",
+				"pointCount"
+			],
+			[
+				"line",
+				"lineCount"
+			],
+			[
+				"squa",
+				"squareCount"
+			],
+			[
+				"box",
+				"targetBoxSize"
+			],
+			[
+				"boxe",
+				"boxSize"
+			],
+			[
+				"BOX",
+				"MAX_BOX_SIZE"
+			],
+			[
+				"MA",
+				"MAX_BOX_SIZE"
+			],
+			[
+				"multi",
+				"multibrot"
+			],
+			[
+				"minY",
+				"minY_"
+			],
+			[
+				"max",
+				"maxX_"
+			],
+			[
+				"maxY",
+				"maxY_"
+			],
+			[
+				"minX",
+				"minX_"
+			],
+			[
+				"initial",
+				"initialMessage"
+			],
+			[
+				"matri",
+				"matrix2"
+			],
+			[
+				"Mat",
+				"Matrix2D"
+			],
+			[
+				"handle",
+				"handleFlagsInternal"
+			],
+			[
+				"atomS",
+				"atomStacks_"
+			],
+			[
+				"pass",
+				"passwordFlag"
+			],
+			[
+				"run",
+				"runtime_error"
+			],
+			[
+				"cycleN",
+				"cycleSnapshotsFlag"
+			],
+			[
+				"animatD",
+				"animationDelayFlag"
+			],
+			[
+				"st",
+				"std::string"
+			],
+			[
+				"boundingB",
+				"boundingBox"
+			],
+			[
+				"make",
+				"make_pair"
+			],
+			[
+				"off",
+				"offset"
+			],
+			[
+				"Boundi",
+				"BoundingBox"
+			],
+			[
+				"Bound",
+				"BoundingBoxPtr"
+			],
+			[
+				"Boundin",
+				"BoundingBoxPtr"
+			],
+			[
+				"maxim",
+				"maximum_"
+			],
+			[
+				"mi",
+				"minimum_"
+			],
+			[
+				"boundin",
+				"boundingBoxesOverlap"
+			],
+			[
+				"boundingBO",
+				"boundingBoxes"
+			],
+			[
+				"Size",
+				"size_t"
+			],
+			[
+				"traje",
+				"trajectories"
+			],
+			[
+				"Traj",
+				"TrajectoryPtr"
+			],
+			[
+				"mimum",
+				"minimum"
+			],
+			[
+				"mimu",
+				"minimum"
+			],
+			[
+				"offset",
+				"offsetVector_"
+			],
+			[
+				"of",
+				"offsetVector_"
+			],
+			[
+				"offs",
+				"offsetVector"
+			],
+			[
+				"flipY",
+				"flipY_"
+			],
+			[
+				"flip",
+				"flipY_"
+			],
+			[
+				"flipX",
+				"flipX_"
+			],
+			[
+				"textureP",
+				"texturePosX_"
+			],
+			[
+				"connection",
+				"connectionPath_"
+			],
+			[
+				"PARSE_",
+				"PARSE_DOUBLE_FLAG"
+			],
+			[
+				"PARSE",
+				"PARSE_SINGLE_FLAG"
+			],
+			[
+				"interpre",
+				"interpretInt"
+			],
+			[
+				"intepre",
+				"interpretUInt"
+			],
+			[
+				"imageP",
+				"imageApath_"
+			],
+			[
+				"skyB",
+				"skyboxDisabled_"
+			],
+			[
+				"cycleSN",
+				"cycleSnapshots"
+			],
+			[
+				"cycleSnaps",
+				"cycleSnapshots1"
+			],
+			[
+				"cycleS",
+				"cycleSnapshots_"
+			],
+			[
+				"cycleSna",
+				"cycleSnapshots"
+			],
+			[
+				"snapIn",
+				"snapshotIndexB_"
+			],
+			[
+				"snapshotIn",
+				"snapshotIndexA_"
+			],
+			[
+				"bounce",
+				"bounceAnimation"
+			],
+			[
+				"snaps",
+				"snapshots"
+			],
+			[
+				"snapsho",
+				"snapshotIndexB_"
+			],
+			[
+				"snapshotIN",
+				"snapshotIndexB_"
+			],
+			[
+				"temporar",
+				"temporaryProjMatrix_"
+			],
+			[
+				"elementnd",
+				"elementIndex"
+			],
+			[
+				"ins",
+				"instanceIndex"
+			],
+			[
+				"elemn",
+				"elementIndexes_"
+			],
+			[
+				"bon",
+				"bondInstance_"
+			],
+			[
+				"Instan",
+				"InstancedModelPtr"
+			],
+			[
+				"model",
+				"modelMatrices_"
+			],
+			[
+				"Snapshot",
+				"SnapshotPtr"
+			],
+			[
+				"elemen",
+				"elementMap"
+			],
+			[
+				"element",
+				"elementInstances_"
+			],
+			[
+				"ambi",
+				"ambientLightUpdated_"
+			],
+			[
+				"proga",
+				"programHandle"
+			],
+			[
+				"cac",
+				"cachedHandle_"
+			],
+			[
+				"temper",
+				"TEMPERATURE"
+			],
+			[
+				"temp",
+				"temperature"
+			],
+			[
+				"FL",
+				"FLT_EPSILON"
+			],
+			[
+				"cut",
+				"cutoffHappened"
+			],
+			[
+				"best",
+				"bestSoFar"
+			],
+			[
+				"sim",
+				"simulatedAnnealing"
+			],
+			[
+				"random",
+				"randomIndex"
+			],
+			[
+				"rendera",
+				"renderables_"
+			],
+			[
+				"modelM",
+				"modelMatrices"
+			],
+			[
+				"Instance",
+				"InstancedModel"
+			],
+			[
+				"push",
+				"push_back"
+			],
+			[
+				"render",
+				"renderable"
+			],
+			[
+				"projMatr",
+				"projMatrixUniform"
+			],
+			[
+				"proje",
+				"projectionUpdated_"
+			],
+			[
+				"projMat",
+				"projMatrixUniform"
+			],
+			[
+				"amb",
+				"ambientLightUniform"
+			],
+			[
+				"projM",
+				"projMatrixUniform"
+			],
+			[
+				"viewM",
+				"viewMatrixUniform"
+			],
+			[
+				"OPtion",
+				"OptionalDataBuffer"
+			],
+			[
+				"program",
+				"programHandle"
+			],
+			[
+				"GL",
+				"GLint"
+			],
+			[
+				"optionAL",
+				"optionalDBs"
+			],
+			[
+				"optionA",
+				"optionalDBs"
+			],
+			[
+				"Inst",
+				"InstancedModel"
+			],
+			[
+				"optional",
+				"optionalDBs"
+			],
+			[
+				"modelMatri",
+				"modelMatrices"
+			],
+			[
+				"animatioN",
+				"animationDelay_"
+			],
+			[
+				"animation",
+				"animationDelay2"
+			],
+			[
+				"anima",
+				"animationHappened"
+			],
+			[
+				"nee",
+				"needsRerendering_"
+			],
+			[
+				"progra",
+				"programHandle"
+			],
+			[
+				"ATO",
+				"ATOM_SLICES"
+			],
+			[
+				"el",
+				"elif"
+			],
+			[
+				"patient",
+				"patientIndication"
+			],
+			[
+				"patie",
+				"patientIndication"
+			],
+			[
+				"recei",
+				"received"
+			],
+			[
+				"ATom",
+				"AtomPtr"
+			],
+			[
+				"shared",
+				"std::shared_ptr"
+			],
+			[
+				"Program",
+				"ProgramPtr"
+			],
+			[
+				"snap",
+				"snapshots"
+			],
+			[
+				"make_",
+				"make_pair"
+			],
+			[
+				"traj",
+				"trajectoryParser"
+			],
+			[
+				"pars",
+				"parse"
+			],
+			[
+				"prot",
+				"proteinStr"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "main.cpp",
+			"settings":
+			{
+				"buffer_size": 4241,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/reschedule.sh",
+			"settings":
+			{
+				"buffer_size": 572,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/temp.sh",
+			"settings":
+			{
+				"buffer_size": 418,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "maximum-parsimony.sublime-project",
+			"settings":
+			{
+				"buffer_size": 302,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 54.0,
+		"selected_items":
+		[
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"git diff",
+				"Git: Diff All"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"git dif",
+				"Git: Diff All"
+			],
+			[
+				"git add",
+				"Git: Add Current File"
+			],
+			[
+				"gitdiff",
+				"Git: Diff All"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: list",
+				"Package Control: List Packages"
+			],
+			[
+				"git dif f",
+				"Git: Diff All"
+			],
+			[
+				"git diff a",
+				"Git: Diff All"
+			],
+			[
+				"hist",
+				"Git: Commit history"
+			],
+			[
+				"his",
+				"Git: Commit history"
+			],
+			[
+				"git d",
+				"Git: Diff Staged"
+			],
+			[
+				"git di",
+				"Git: Diff All"
+			],
+			[
+				"Package Control: en",
+				"Package Control: Enable Package"
+			],
+			[
+				"Package Control: ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"Package Control: dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"git his",
+				"Git: Commit history"
+			],
+			[
+				"git bl",
+				"Git: Blame"
+			],
+			[
+				"git hist",
+				"Git: Commit history"
+			],
+			[
+				"git bla",
+				"Git: Blame"
+			],
+			[
+				"git blam",
+				"Git: Blame"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git statu",
+				"Git: Status"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: add",
+				"Package Control: Add Repository"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: di",
+				"Package Control: Disable Package"
+			],
+			[
+				"clang",
+				"Preferences: SublimeClang Settings – Default"
+			],
+			[
+				"Package Control: remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: disc",
+				"Package Control: Discover Packages"
+			],
+			[
+				"Package Control: remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: upgr",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"Package Control: add re",
+				"Package Control: Add Repository"
+			],
+			[
+				"Package Control: remv",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 153.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Modeling/DataBuffers/ColorBuffer.cpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Modeling/DataBuffers/ColorBuffer.hpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Modeling/DataBuffers/DataBuffer.hpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Modeling/DataBuffers/IndexBuffer.cpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Modeling/DataBuffers/IndexBuffer.hpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Modeling/DataBuffers/OptionalDataBuffer.hpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Modeling/DataBuffers/SampledBuffers/Image.cpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Modeling/DataBuffers/SampledBuffers/Image.hpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Modeling/DataBuffers/SampledBuffers/TexturedCube.cpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Modeling/DataBuffers/SampledBuffers/TexturedCube.hpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Modeling/DataBuffers/VertexBuffer.cpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Modeling/DataBuffers/VertexBuffer.hpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Modeling/InstancedModel.cpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Modeling/InstancedModel.hpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Modeling/Mesh/Mesh.cpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Modeling/Mesh/Mesh.hpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Modeling/Mesh/Quad.struct",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Modeling/Mesh/Triangle.struct",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Modeling/Shading/Program.cpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Modeling/Shading/Program.hpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Modeling/Shading/Shader.cpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Modeling/Shading/Shader.hpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Modeling/Shading/ShaderManager.cpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Modeling/Shading/ShaderManager.hpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Modeling/Shading/ShaderSnippet.cpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Modeling/Shading/ShaderSnippet.hpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Modeling/Shading/ShaderUtilizer.hpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Options.cpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Options.hpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/PyON/StringManip.cpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/PyON/StringManip.hpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Trajectory/BoundingBox.cpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Trajectory/BoundingBox.hpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Viewer/User.cpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Viewer/User.hpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Viewer/Viewer.cpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Viewer/Viewer.hpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/World/Camera.cpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/World/Camera.hpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/World/Light.cpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/World/Light.hpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/World/Scene.cpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/World/Scene.hpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/main.cpp",
+		"/home/jesse/Documents/git_projects/Folding-Atomata/src/Viewer/Viewer.cpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/main.cpp",
+		"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.hpp",
+		"/home/jesse/Documents/git_projects/Buddhabrot/src/main.hpp",
+		"/home/jesse/Documents/git_projects/Buddhabrot/src/main.cpp",
+		"/home/jesse/Documents/git_projects/maximum-parsimony/src/job.sh",
+		"/home/jesse/Documents/git_projects/maximum-parsimony/src/compile.sh",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/test1.txt",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/test2.txt",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/test3.txt",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/test4.txt",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/test5.txt",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/test6.txt",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/test7.txt",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/test8.txt",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/main.hpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/job.sh",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/compile.sh",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/boxSize=1 3s.txt",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/boxSize=1 2s.dat",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/converter.o160512",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/boxSize=1 1s",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/boxSize=1 4s.txt",
+		"/run/user/1000/gvfs/sftp:host=login.rc.usu.edu,user=A01485921/home/A01485921/multibrot/converter/converter.o160512",
+		"/run/user/1000/gvfs/sftp:host=login.rc.usu.edu,user=A01485921/home/A01485921/geometry.dat",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/geometry.dat",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Multibrot generator/main.cpp",
+		"/home/jesse/Documents/Shell/Shell.cpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Multibrot generator/job.sh",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Multibrot generator/reschedule.sh",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/multibrot,d=2.dat",
+		"/run/user/1000/gvfs/smb-share:server=files.rc.usu.edu,share=a01485921/multibrot/main.cpp",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/CMakeLists.txt",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/ClangCompileRun.sh",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/clean.sh",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/reschedule.sh",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Multibrot renderer/CMakeCache.txt",
+		"/home/jesse/Documents/git_projects/Buddhabrot/src/clean.sh",
+		"/home/jesse/Documents/git_projects/Buddhabrot/src/compileRunLocal.sh",
+		"/home/jesse/Documents/git_projects/Buddhabrot/src/compile.sh",
+		"/home/jesse/Documents/git_projects/Buddhabrot/src/reschedule.sh",
+		"/home/jesse/Documents/git_projects/Buddhabrot/src/job.sh",
+		"/home/jesse/Documents/git_projects/Buddhabrot/src/CMakeLists.txt",
+		"/home/jesse/Documents/git_projects/Buddhabrot/src/ClangCompileRun.sh",
+		"/home/jesse/Dropbox/Shared with Parents/Stevesbees.com/anet_php_sdk/doc/SIM.markdown",
+		"/home/jesse/Dropbox/Shared with Parents/Stevesbees.com/anet_php_sdk/lib/AuthorizeNetDPM.php",
+		"/home/jesse/Dropbox/Shared with Parents/Stevesbees.com/scripts/helper_functions.php",
+		"/home/jesse/Dropbox/Shared with Parents/Stevesbees.com/checkout/card_receipt.php",
+		"/home/jesse/Dropbox/Shared with Parents/Stevesbees.com/checkout/check_receipt.php",
+		"/home/jesse/Dropbox/Shared with Parents/Stevesbees.com/checkout/checkout_form.php",
+		"/home/jesse/Dropbox/Shared with Parents/Stevesbees.com/checkout/relay_response.php",
+		"/home/jesse/Dropbox/Shared with Parents/Stevesbees.com/anet_php_sdk/doc/DPM.markdown",
+		"/home/jesse/Dropbox/Shared with Parents/Stevesbees.com/stylesheets/order_bees.css",
+		"/home/jesse/Dropbox/Shared with Parents/Stevesbees.com/stylesheets/main.css",
+		"/home/jesse/Dropbox/Shared with Parents/Stevesbees.com/SpryAssets/SpryAccordion.css",
+		"/home/jesse/Dropbox/Shared with Parents/Stevesbees.com/index.php",
+		"/home/jesse/Dropbox/Shared with Parents/Stevesbees.com/stylesheets/index.css",
+		"/home/jesse/Dropbox/Shared with Parents/Stevesbees.com/order_bees.php",
+		"/home/jesse/Dropbox/Shared with Parents/Stevesbees.com/stylesheets/stevesbees_home.css",
+		"/home/jesse/Dropbox/Shared with Parents/Stevesbees.com/stylesheets/order_supplies.css",
+		"/home/jesse/Dropbox/Shared with Parents/Stevesbees.com/stylesheets/fancyHRandButtons.css",
+		"/home/jesse/Dropbox/Shared with Parents/Stevesbees.com/stylesheets/checkout_form.css",
+		"/home/jesse/Dropbox/Shared with Parents/Stevesbees.com/stylesheets/cartTable.css",
+		"/home/jesse/Dropbox/Shared with Parents/Stevesbees.com/anet_php_sdk/README.html",
+		"/home/jesse/Dropbox/Shared with Parents/Stevesbees.com/Templates/Main.dwt",
+		"/home/jesse/Dropbox/Shared with Parents/Stevesbees.com/anet_php_sdk/AuthorizeNet.php",
+		"/home/jesse/Dropbox/Shared with Parents/Stevesbees.com/checkout/CartManager.php",
+		"/home/jesse/Dropbox/Shared with Parents/Stevesbees.com/checkout/order_receipt.php",
+		"/home/jesse/Dropbox/Shared with Parents/Stevesbees.com/scripts/databaseConnect.php",
+		"/home/jesse/Dropbox/Shared with Parents/Stevesbees.com/scripts/order_bees.js",
+		"/home/jesse/Dropbox/Shared with Parents/Stevesbees.com/scripts/order_supplies.js",
+		"/home/jesse/Dropbox/Shared with Parents/Stevesbees.com/contact_us.php",
+		"/home/jesse/Documents/git_projects/GlucoPro/src/hippocraticapps/glucopro/activities/Charts.java",
+		"/home/jesse/Documents/git_projects/GlucoPro/src/hippocraticapps/glucopro/activities/Main.java",
+		"/home/jesse/Documents/git_projects/GlucoPro/src/hippocraticapps/glucopro/activities/Recommend.java",
+		"/home/jesse/Documents/git_projects/GlucoPro/src/hippocraticapps/glucopro/activities/Settings.java",
+		"/home/jesse/Documents/git_projects/GlucoPro/src/hippocraticapps/glucopro/activities/Test.java",
+		"/home/jesse/Documents/git_projects/GlucoPro/src/hippocraticapps/glucopro/activities/UserInformation.java",
+		"/home/jesse/Documents/git_projects/GlucoPro/src/hippocraticapps/glucopro/adapters/ImageAdapter.java",
+		"/home/jesse/Documents/git_projects/GlucoPro/src/hippocraticapps/glucopro/adapters/LabeledImage.java",
+		"/home/jesse/Documents/git_projects/GlucoPro/src/hippocraticapps/glucopro/bluetooth/BluetoothChat.java",
+		"/home/jesse/Documents/git_projects/GlucoPro/src/hippocraticapps/glucopro/bluetooth/BluetoothChatService.java",
+		"/home/jesse/Documents/git_projects/GlucoPro/src/hippocraticapps/glucopro/bluetooth/BluetoothConnectListener.java",
+		"/home/jesse/Documents/git_projects/GlucoPro/src/hippocraticapps/glucopro/bluetooth/DeviceListActivity.java"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer",
+			"/home/jesse/Dropbox/Shared with Parents/Stevesbees.com",
+			"/home/jesse/Dropbox/Shared with Parents/Stevesbees.com/anet_php_sdk",
+			"/home/jesse/Dropbox/Shared with Parents/Stevesbees.com",
+			"/home/jesse/AWH site backup/bees/new",
+			"/home/jesse/Dropbox/Shared with Parents/Stevesbees.com",
+			"/home/jesse/Documents/git_projects/GlucoPro",
+			"/home/jesse/bonescript",
+			"/home/jesse/system",
+			"/run/user/jesse/gvfs/sftp:host=192.168.7.2,port=7819,user=root/lib/systemd/system",
+			"/home/jesse/Documents/git_projects/GlucoPro",
+			"/home/jesse/Documents/git_projects/Folding-Atomata",
+			"/home/jesse/Documents/git_projects/Folding-Atomata/src/libs/tclap",
+			"/home/jesse/Documents/git_projects/Folding-Atomata/src/libs",
+			"/home/jesse/Documents/git_projects/Folding-Atomata/src/libs/tclap",
+			"/home/jesse/androidEclipse/Assignment7",
+			"/home/jesse/Documents/git_projects/Folding-Atomata",
+			"/home/jesse/Documents/git_projects/Folding-Atomata/src",
+			"/home/jesse/Documents/git_projects/Folding-Atomata",
+			"/home/jesse/Documents/git_projects/dr-watson",
+			"/home/jesse/Documents/git_projects/Folding-Atomata/src",
+			"/home/jesse/Documents/git_projects/Folding-Atomata",
+			"/home/jesse/Documents/git_projects/Folding-Atomata/src",
+			"/home/jesse/Documents/git_projects/Folding-Atomata",
+			"/home/jesse/Documents/git_projects/Folding-Atomata/src",
+			"/home/jesse/Documents/git_projects/Folding-Atomata",
+			"/home/jesse/Documents/git_projects/Folding-Atomata/src/libs",
+			"/home/jesse/Documents/git_projects/Folding-Atomata/src/libs/glm",
+			"/home/jesse/Documents/git_projects/Folding-Atomata",
+			"/home/jesse/Documents/git_projects/Folding-Atomata/src",
+			"/home/jesse/Documents/git_projects/Folding-Atomata/src/debian",
+			"/home/jesse/Documents/git_projects/Folding-Atomata/src",
+			"/home/jesse/Documents/git_projects/Folding-Atomata/src/debian",
+			"/home/jesse/Documents/git_projects/Folding-Atomata/src",
+			"/home/jesse/Documents/git_projects/Folding-Atomata/src/glm/core",
+			"/home/jesse/Documents/git_projects/Folding-Atomata/src",
+			"/home/jesse/Documents/git_projects/Folding-Atomata/src/Modeling",
+			"/home/jesse/Documents/git_projects/Folding-Atomata/src",
+			"/home/jesse/Documents/git_projects/Folding-Atomata/src/Modeling",
+			"/home/jesse/Documents/git_projects/Folding-Atomata/src",
+			"/home/jesse/Documents/git_projects/Folding-Atomata/src/Sockets",
+			"/home/jesse/Documents/git_projects/iVoxely/src",
+			"/home/jesse/Dropbox/EngineeringWeek/engineering_week_project",
+			"/home/jesse/Documents/git_projects/iVoxely/src",
+			"/home/jesse/Documents/git_projects/iVoxely/src/Modeling",
+			"/home/jesse/Documents/git_projects/iVoxely/src",
+			"/home/jesse/Documents/git_projects/iVoxely/src/Modeling/Shading",
+			"/home/jesse/Documents/git_projects/iVoxely/src"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"a program that displays 3D views of Folding@home proteins.",
+			"a program",
+			"Folding Atomata",
+			"needsRerendering_",
+			"short",
+			"score",
+			"matrix",
+			"Matrix",
+			"matrix",
+			"//std::c",
+			"j",
+			"max",
+			"^3",
+			"^1",
+			"^4",
+			"Actually executed!",
+			"matrix",
+			"Matrix2D",
+			"targetBoxSize",
+			"x",
+			"stream",
+			"MAX_HEIGHT",
+			"**https",
+			"***",
+			"    ",
+			"router_detail",
+			"tor 0.2.3",
+			"o",
+			"matrices",
+			"MAX_DEPTH",
+			"thread",
+			"getMax",
+			"window.location",
+			"AuthorizeNetSIM_Form",
+			"getHiddenFieldString",
+			"transact.dll",
+			"getRelayResponseSnippet",
+			"redirect",
+			"relay_response",
+			"getCardFields",
+			"cash",
+			"getRelayResponseSnippet",
+			"//www.alaska",
+			"/bees",
+			"aerial view",
+			"font-size",
+			"width",
+			"font-family",
+			"font-sz",
+			"font-size",
+			"bee_order",
+			"font-size",
+			"bee_orders",
+			"bee_orders.css",
+			"at",
+			"getInstance",
+			"gregori",
+			"<<",
+			"TorOverview",
+			"\\_",
+			"_ECDHE",
+			"TLS1",
+			"_ECDHE",
+			"_ECDSA",
+			"_ECDHE\\_ECDSA",
+			"\\_",
+			"TLS1_ECDHE_ECDSA_WITH_AES_256_CBC_SHA",
+			"_",
+			"TLS1_ECDHE_ECDSA_WITH_AES_256_CBC_SHA",
+			"_",
+			"Hellman",
+			"anonymize",
+			"1.05",
+			"1.04",
+			"1.03",
+			"0",
+			"1.04",
+			"1.03",
+			"1.02",
+			"1.01",
+			"1.00",
+			"1.0",
+			"Diffie-Hellman",
+			"Diffie",
+			"block cip",
+			"TBB",
+			"onion-lik",
+			"in turn",
+			"Graham2013",
+			"Diffie",
+			"tails",
+			"_",
+			"K$_",
+			"$_",
+			"}$, ",
+			"}$,",
+			"$",
+			"R",
+			"_",
+			"R",
+			"{",
+			"_",
+			"1",
+			"_{1",
+			"{",
+			"}",
+			"and",
+			"F} ",
+			"}",
+			"textsubscript",
+			"_",
+			"K_",
+			"_",
+			"with the first",
+			"cell",
+			"onion-l",
+			"circuit",
+			"TLS",
+			"cell",
+			"Ling2012",
+			"Ling2011",
+			"Ling2012",
+			"Bauer2007",
+			" (",
+			"80",
+			"https",
+			"80",
+			"443"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"a program that displays 3D views of the Multibrot fractal",
+			"Multibrot Renderer",
+			"InstancedModelPtr",
+			"InstancedModel",
+			"along with this program. If not",
+			"folding-atomata",
+			"material",
+			"materialColor",
+			"Game",
+			"Viewer",
+			"frustrum",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "main.cpp",
+					"settings":
+					{
+						"buffer_size": 4241,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3160,
+								3160
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2760.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/reschedule.sh",
+					"settings":
+					{
+						"buffer_size": 572,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								292,
+								292
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 69.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/temp.sh",
+					"settings":
+					{
+						"buffer_size": 418,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								205,
+								205
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "maximum-parsimony.sublime-project",
+					"settings":
+					{
+						"buffer_size": 302,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								94,
+								94
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 124.0
+	},
+	"output.git":
+	{
+		"height": 32.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 343.0,
+	"status_bar_visible": true
+}

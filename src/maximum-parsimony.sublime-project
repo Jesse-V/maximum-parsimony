@@ -1,0 +1,13 @@
+{
+	"folders":
+	[
+		{
+			"path": "/home/jesse/Documents/git_projects/maximum-parsimony/src/"
+		}
+	],
+    "settings":
+    {
+        "sublimegdb_workingdir": "${folder:${project_path:maximumparsimony}}",
+        "sublimegdb_commandline": "gdb --interpreter=mi ./maximumparsimony"
+    }
+}

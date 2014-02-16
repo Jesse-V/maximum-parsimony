@@ -4,23 +4,28 @@
 
 #include <algorithm>
 #include <string>
+#include <xmmintrin.h>
 
-typedef std::vector<unsigned long> List;
+typedef unsigned long* List;
 
 class Node
 {
     public:
-        Node(const List& sequence, Node* left, Node* right) :
+        Node(List sequence, Node* left, Node* right) :
             sequence_(sequence), left_(left), right_(right)
-        {}
+        {
+            sequenceSSE_ = reinterpret_cast<__m128*>(&sequence_);
+        }
 
         List sequence_;
+        __m128* sequenceSSE_;
         Node* left_ = NULL;
         Node* right_ = NULL;
 };
 
-List getSequence(std::size_t length);
+List getSequence();
 std::pair<List, int> score(const List& a, const List& b);
+std::pair<List, int> scoreSSE(const List& a, const List& b);
 void printTree(const Node* node, int depth);
 std::mt19937 getMersenneTwister();
 

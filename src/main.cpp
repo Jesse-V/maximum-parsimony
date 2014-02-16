@@ -6,15 +6,15 @@
 #include <limits>
 
 
-const std::size_t SEQUENCE_COUNT = 129;
-const std::size_t SEQUENCE_LENGTH = 120;
+const std::size_t SEQUENCE_COUNT = 128;
+const std::size_t SEQUENCE_LENGTH = 128;
 
 
 int main(int argc, char** argv)
 {
     std::vector<Node*> nodes;
     for (std::size_t j = 0; j < SEQUENCE_COUNT; j++)
-        nodes.push_back(new Node(getSequence(SEQUENCE_LENGTH), NULL, NULL));
+        nodes.push_back(new Node(getSequence(), NULL, NULL));
 
     while (nodes.size() > 1)
     {
@@ -67,7 +67,7 @@ int main(int argc, char** argv)
 
 std::pair<List, int> score(const List& a, const List& b)
 {
-    List result(SEQUENCE_LENGTH, 0);
+    List result = new unsigned long[SEQUENCE_LENGTH];
     int score = 0;
 
     for (std::size_t j = 0; j < SEQUENCE_LENGTH; j++)
@@ -87,27 +87,49 @@ std::pair<List, int> score(const List& a, const List& b)
 
 
 
-List getSequence(std::size_t length)
+std::pair<List, int> scoreSSE(const List& a, const List& b)
+{
+    List result = new unsigned long[SEQUENCE_LENGTH];
+    int score = 0;
+
+    for (std::size_t j = 0; j < SEQUENCE_LENGTH; j++)
+    {
+        auto aAndb = a[j] & b[j];
+        if (aAndb == 0)
+        {
+            result[j] = a[j] | b[j];
+            score++;
+        }
+        else
+            result[j] = aAndb;
+    }
+
+    return std::make_pair(result, score);
+}
+
+
+
+List getSequence()
 {
     auto mersenneTwister = getMersenneTwister();
     std::uniform_int_distribution<int> randomInt(1, 4);
 
-    List sequence;
-    for (std::size_t j = 0; j < length; j++)
+    List sequence = new unsigned long[SEQUENCE_LENGTH];
+    for (std::size_t j = 0; j < SEQUENCE_LENGTH; j++)
     {
         switch (randomInt(mersenneTwister))
         {
             case 1:
-                sequence.push_back(0x1);
+                sequence[j] = 0x1;
                 break;
             case 2:
-                sequence.push_back(0x2);
+                sequence[j] = 0x2;
                 break;
             case 3:
-                sequence.push_back(0x4);
+                sequence[j] = 0x4;
                 break;
             case 4:
-                sequence.push_back(0x8);
+                sequence[j] = 0x8;
                 break;
         }
     }
