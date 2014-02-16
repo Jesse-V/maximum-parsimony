@@ -6,8 +6,8 @@
 #include <limits>
 
 
-const std::size_t SEQUENCE_COUNT = 128;
-const std::size_t SEQUENCE_LENGTH = 128;
+const std::size_t SEQUENCE_COUNT = 8;
+const std::size_t SEQUENCE_LENGTH = 16;
 
 
 int main(int argc, char** argv)
@@ -29,8 +29,8 @@ int main(int argc, char** argv)
             }
             else
             {
-                List blank;
-                std::pair<List, int> best = std::make_pair(blank,
+                uint8_t* blank;
+                std::pair<uint8_t*, int> best = std::make_pair(blank,
                                             std::numeric_limits<int>::max());
                 std::size_t bestIndex = 0;
                 for (std::size_t j = 1; j < nodes.size(); j++)
@@ -69,9 +69,9 @@ int main(int argc, char** argv)
 
 
 
-std::pair<List, int> score(const Node* nodeA, const Node* nodeB)
+std::pair<uint8_t*, int> score(const Node* nodeA, const Node* nodeB)
 {
-    List result = new unsigned long[SEQUENCE_LENGTH];
+    uint8_t* result = new uint8_t[SEQUENCE_LENGTH];
     int score = 0;
 
     for (std::size_t j = 0; j < SEQUENCE_LENGTH; j++)
@@ -92,34 +92,31 @@ std::pair<List, int> score(const Node* nodeA, const Node* nodeB)
 
 
 
-std::pair<__m128*, int> scoreSSE(const Node* nodeA, const Node* nodeB)
+std::pair<__m128i*, int> scoreSSE(const Node* nodeA, const Node* nodeB)
 {
-    static const __m128 zero = _mm_set1_ps(0.f);
-    static const auto length = SEQUENCE_LENGTH / 4;
-
-    __m128* result = new __m128[length];
-    for (std::size_t j = 0; j < length; j++)
-    {
-        auto a = nodeA->sequenceSSE_[j];
-        auto b = nodeB->sequenceSSE_[j];
-
-        auto aAndB = _mm_and_ps(a, b);
-        auto comp  = _mm_cmpeq_ps(zero, aAndB);
-        auto c     = _mm_and_ps(comp, _mm_or_ps(a, b));
-        auto d     = _mm_or_ps(c, aAndB);
-
-        result[j] = d;
-    }
-
-    auto values = reinterpret_cast<unsigned long*>(&result);
+    static __m128i zero = _mm_set1_ps(0.f), comp, tempOr, a, b, r;
+    static uint8_t* aUnit = reinterpret_cast<uint8_t*>(&a);
+    static uint8_t* bUnit = reinterpret_cast<uint8_t*>(&b);
+    static uint8_t* rUnit = reinterpret_cast<uint8_t*>(&r);
 
     int score = 0;
-    for (int j = 0; j < SEQUENCE_LENGTH; j += 4)
+    __m128i* result = new __m128i[SEQUENCE_LENGTH / 16];
+    for (int j = 0; j < SEQUENCE_LENGTH - 15; j += 16)
     {
-        score += !values[j + 0];
-        score += !values[j + 1];
-        score += !values[j + 2];
-        score += !values[j + 3];
+        for (int k = 0; k < 16; k++)
+        {
+            aUnit[k] = nodeA->sequence_[j + k];
+            bUnit[k] = nodeB->sequence_[j + k];
+        }
+
+        r = _mm_and_si128(a, b);
+        for (int k = 0; k < 16; k++)
+            score += !(int)rUnit[k];
+
+        tempOr = _mm_or_si128(a, b);
+        comp = _mm_cmpeq_epi8(zero, r);
+        comp = _mm_and_si128(comp, tempOr);
+        result[j / 16] = _mm_or_si128(comp, r);
     }
 
     return std::make_pair(result, score);
@@ -127,12 +124,12 @@ std::pair<__m128*, int> scoreSSE(const Node* nodeA, const Node* nodeB)
 
 
 
-List getSequence()
+uint8_t* getSequence()
 {
     auto mersenneTwister = getMersenneTwister();
     std::uniform_int_distribution<int> randomInt(1, 4);
 
-    List sequence = new unsigned long[SEQUENCE_LENGTH];
+    uint8_t* sequence = new uint8_t[SEQUENCE_LENGTH];
     for (std::size_t j = 0; j < SEQUENCE_LENGTH; j++)
     {
         switch (randomInt(mersenneTwister))

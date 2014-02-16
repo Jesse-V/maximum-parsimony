@@ -4,15 +4,19 @@
 		"selected_items":
 		[
 			[
+				"seq",
+				"sequence_"
+			],
+			[
+				"sequence",
+				"sequence_"
+			],
+			[
 				"glm",
 				"glm::vec3"
 			],
 			[
 				"sequ",
-				"sequence_"
-			],
-			[
-				"seq",
 				"sequence_"
 			],
 			[
@@ -510,10 +514,6 @@
 			[
 				"pars",
 				"parse"
-			],
-			[
-				"prot",
-				"proteinStr"
 			]
 		]
 	},
@@ -523,23 +523,15 @@
 			"file": "main.cpp",
 			"settings":
 			{
-				"buffer_size": 4241,
+				"buffer_size": 5985,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/reschedule.sh",
+			"file": "main.hpp",
 			"settings":
 			{
-				"buffer_size": 572,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/temp.sh",
-			"settings":
-			{
-				"buffer_size": 418,
+				"buffer_size": 702,
 				"line_ending": "Unix"
 			}
 		},
@@ -547,17 +539,119 @@
 			"file": "maximum-parsimony.sublime-project",
 			"settings":
 			{
-				"buffer_size": 302,
+				"buffer_size": 285,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jesse/.config/sublime-text-2/Packages/SublimeGDB/SublimeGDB.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 3739,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jesse/.config/sublime-text-2/Packages/User/SublimeGDB.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 138,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jesse/.config/sublime-text-2/Packages/SublimeGDB/Default.sublime-keymap",
+			"settings":
+			{
+				"buffer_size": 2679,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "174-gdb-show interpreter\n=thread-group-added,id=\"i1\"\n~\"GNU gdb (GDB) 7.6.1-ubuntu\\n\"\n~\"Copyright (C) 2013 Free Software Foundation, Inc.\\n\"\n~\"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\\nThis is free software: you are free to change and redistribute it.\\nThere is NO WARRANTY, to the extent permitted by law.  Type \\\"show copying\\\"\\nand \\\"show warranty\\\" for details.\\n\"\n~\"This GDB was configured as \\\"x86_64-linux-gnu\\\".\\nFor bug reporting instructions, please see:\\n\"\n~\"<http://www.gnu.org/software/gdb/bugs/>...\\n\"\n~\"Reading symbols from /home/jesse/Documents/git_projects/maximum-parsimony/src/maximumparsimony...\"\n~\"done.\\n\"\n(gdb)\n174^error,msg=\"Undefined show command: \\\"interpreter\\\".  Try \\\"help show\\\".\"\n(gdb)\n175-inferior-tty-set /tmp/tmpKNXL2o\n175^done\n(gdb)\n176-gdb-set target-async 1\n176^done\n177-gdb-set pagination off\n(gdb)\n178-gdb-set disassembly-flavor intel\n177^done\n179-break-insert \"\\\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\\\":102\"\n(gdb)\n178^done\n(gdb)\n179^done,bkpt={number=\"1\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"0x00000000004020ae\",func=\"scoreSSE(Node const*, Node const*)\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"102\",thread-groups=[\"i1\"],times=\"0\",original-location=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp:102\"}\n(gdb)\n180-break-insert \"\\\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\\\":105\"\n180^done,bkpt={number=\"2\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"<MULTIPLE>\",times=\"0\",original-location=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp:105\"},{number=\"2.1\",enabled=\"y\",addr=\"0x0000000000401d79\",func=\"main(int, char**)\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"105\",thread-groups=[\"i1\"]},{number=\"2.2\",enabled=\"y\",addr=\"0x00000000004020d8\",func=\"scoreSSE(Node const*, Node const*)\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"105\",thread-groups=[\"i1\"]}\n(gdb)\n181-exec-continue\n181^error,msg=\"The program is not being run.\"\n(gdb)\n182run\n&\"run\\n\"\n~\"Starting program: /home/jesse/Documents/git_projects/maximum-parsimony/src/./maximumparsimony \\n\"\n=thread-group-started,id=\"i1\",pid=\"25928\"\n=thread-created,id=\"1\",group-id=\"i1\"\n182^running\n*running,thread-id=\"all\"\n=library-loaded,id=\"/lib64/ld-linux-x86-64.so.2\",target-name=\"/lib64/ld-linux-x86-64.so.2\",host-name=\"/lib64/ld-linux-x86-64.so.2\",symbols-loaded=\"0\",thread-group=\"i1\"\n(gdb)\n=library-loaded,id=\"/usr/lib/x86_64-linux-gnu/libstdc++.so.6\",target-name=\"/usr/lib/x86_64-linux-gnu/libstdc++.so.6\",host-name=\"/usr/lib/x86_64-linux-gnu/libstdc++.so.6\",symbols-loaded=\"0\",thread-group=\"i1\"\n=library-loaded,id=\"/lib/x86_64-linux-gnu/libm.so.6\",target-name=\"/lib/x86_64-linux-gnu/libm.so.6\",host-name=\"/lib/x86_64-linux-gnu/libm.so.6\",symbols-loaded=\"0\",thread-group=\"i1\"\n=library-loaded,id=\"/lib/x86_64-linux-gnu/libgcc_s.so.1\",target-name=\"/lib/x86_64-linux-gnu/libgcc_s.so.1\",host-name=\"/lib/x86_64-linux-gnu/libgcc_s.so.1\",symbols-loaded=\"0\",thread-group=\"i1\"\n=library-loaded,id=\"/lib/x86_64-linux-gnu/libc.so.6\",target-name=\"/lib/x86_64-linux-gnu/libc.so.6\",host-name=\"/lib/x86_64-linux-gnu/libc.so.6\",symbols-loaded=\"0\",thread-group=\"i1\"\n=breakpoint-modified,bkpt={number=\"2\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"<MULTIPLE>\",times=\"1\",original-location=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp:105\"},{number=\"2.1\",enabled=\"y\",addr=\"0x0000000000401d79\",func=\"main(int, char**)\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"105\",thread-groups=[\"i1\"]},{number=\"2.2\",enabled=\"y\",addr=\"0x00000000004020d8\",func=\"scoreSSE(Node const*, Node const*)\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"105\",thread-groups=[\"i1\"]}\n*stopped,reason=\"breakpoint-hit\",disp=\"keep\",bkptno=\"2\",frame={addr=\"0x0000000000401d79\",func=\"operator[]\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"__n\",value=\"1470988229219219200\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}],file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"},thread-id=\"1\",stopped-threads=\"all\",core=\"2\"\n183-thread-select 1\n183^done,new-thread-id=\"1\",frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"__n\",value=\"1470988229219219200\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}],file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"}\n184-stack-info-frame\n(gdb)\n184^done,frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"}\n(gdb)\n185-stack-list-frames\n185^done,stack=[frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"},frame={level=\"1\",addr=\"0x0000000000401d79\",func=\"main\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"60\"}]\n(gdb)\n186-stack-list-arguments 1\n186^done,stack-args=[frame={level=\"0\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}]},frame={level=\"1\",args=[{name=\"argc\",value=\"6305872\"},{name=\"argv\",value=\"0x7ffff75b79f0 <_IO_stdfile_1_lock>\"}]}]\n(gdb)\n187-thread-info\n187^done,threads=[{id=\"1\",target-id=\"process 25928\",name=\"maximumparsimon\",frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"__n\",value=\"1470988229219219200\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}],file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"},state=\"stopped\",core=\"2\"}],current-thread-id=\"1\"\n(gdb)\n188-thread-list-ids\n188^done,thread-ids={thread-id=\"1\"},current-thread-id=\"1\",number-of-threads=\"1\"\n(gdb)\n189-var-delete var1\n190-var-delete var2\n191-var-delete var3\n189^error,msg=\"Variable object not found\"\n192-stack-list-arguments 0 0 0\n(gdb)\n190^error,msg=\"Variable object not found\"\n(gdb)\n191^error,msg=\"Variable object not found\"\n(gdb)\n192^done,stack-args=[frame={level=\"0\",args=[name=\"this\",name=\"this\",name=\"nodeA\",name=\"nodeB\"]}]\n(gdb)\n193-var-create - * this\n193^done,name=\"var1\",numchild=\"1\",value=\"0x604180\",type=\"std::vector<Node*, std::allocator<Node*> > *\",thread-id=\"1\",has_more=\"0\"\n(gdb)\n194-var-create - * this\n194^done,name=\"var2\",numchild=\"1\",value=\"0x604180\",type=\"std::vector<Node*, std::allocator<Node*> > *\",thread-id=\"1\",has_more=\"0\"\n(gdb)\n195-var-create - * nodeA\n195^done,name=\"var3\",numchild=\"1\",value=\"<optimized out>\",type=\"const Node *\",thread-id=\"1\",has_more=\"0\"\n(gdb)\n196-var-create - * nodeB\n196^done,name=\"var4\",numchild=\"1\",value=\"<optimized out>\",type=\"const Node *\",thread-id=\"1\",has_more=\"0\"\n(gdb)\n197-stack-list-locals 0\n197^done,locals=[]\n(gdb)\n198-var-list-children 1 \"var4\"\n198^done,numchild=\"1\",children=[child={name=\"var4.public\",exp=\"public\",numchild=\"3\",value=\"\",thread-id=\"1\"}],has_more=\"0\"\n(gdb)\n199-var-list-children 1 \"var4.public\"\n199^done,numchild=\"3\",children=[child={name=\"var4.public.sequence_\",exp=\"sequence_\",numchild=\"1\",value=\"\",type=\"uint8_t *\",thread-id=\"1\"},child={name=\"var4.public.left_\",exp=\"left_\",numchild=\"1\",value=\"\",type=\"Node *\",thread-id=\"1\"},child={name=\"var4.public.right_\",exp=\"right_\",numchild=\"1\",value=\"\",type=\"Node *\",thread-id=\"1\"}],has_more=\"0\"\n(gdb)\n200-var-list-children 1 \"var3\"\n200^done,numchild=\"1\",children=[child={name=\"var3.public\",exp=\"public\",numchild=\"3\",value=\"\",thread-id=\"1\"}],has_more=\"0\"\n(gdb)\n201-var-list-children 1 \"var3.public\"\n201^done,numchild=\"3\",children=[child={name=\"var3.public.sequence_\",exp=\"sequence_\",numchild=\"1\",value=\"\",type=\"uint8_t *\",thread-id=\"1\"},child={name=\"var3.public.left_\",exp=\"left_\",numchild=\"1\",value=\"\",type=\"Node *\",thread-id=\"1\"},child={name=\"var3.public.right_\",exp=\"right_\",numchild=\"1\",value=\"\",type=\"Node *\",thread-id=\"1\"}],has_more=\"0\"\n(gdb)\n202-var-list-children 1 \"var2\"\n202^done,numchild=\"1\",children=[child={name=\"var2.std::_Vector_base<Node*, std::allocator<Node*> >\",exp=\"std::_Vector_base<Node*, std::allocator<Node*> >\",numchild=\"1\",value=\"{...}\",type=\"std::_Vector_base<Node*, std::allocator<Node*> >\",thread-id=\"1\"}],has_more=\"0\"\n(gdb)\n203-var-list-children 1 \"var1\"\n203^done,numchild=\"1\",children=[child={name=\"var1.std::_Vector_base<Node*, std::allocator<Node*> >\",exp=\"std::_Vector_base<Node*, std::allocator<Node*> >\",numchild=\"1\",value=\"{...}\",type=\"std::_Vector_base<Node*, std::allocator<Node*> >\",thread-id=\"1\"}],has_more=\"0\"\n(gdb)\n204-var-list-children 1 \"var1.std::_Vector_base<Node*, std::allocator<Node*> >\"\n204^done,numchild=\"1\",children=[child={name=\"var1.std::_Vector_base<Node*, std::allocator<Node*> >.public\",exp=\"public\",numchild=\"1\",value=\"\",thread-id=\"1\"}],has_more=\"0\"\n(gdb)\n205-var-list-children 1 \"var1.std::_Vector_base<Node*, std::allocator<Node*> >.public\"\n205^done,numchild=\"1\",children=[child={name=\"var1.std::_Vector_base<Node*, std::allocator<Node*> >.public._M_impl\",exp=\"_M_impl\",numchild=\"2\",value=\"{...}\",type=\"std::_Vector_base<Node*, std::allocator<Node*> >::_Vector_impl\",thread-id=\"1\"}],has_more=\"0\"\n(gdb)\n206print a\n&\"print a\\n\"\n~\"$1 = {i = {0\"\n~\", 1045149306\"\n~\"}\"\n~\", d = 1.2904777690891933e-08\"\n~\"}\"\n~\"\\n\"\n206^done\n(gdb)\n207print zero\n&\"print zero\\n\"\n~\"$2 = {i = {0\"\n~\", 0\"\n~\"}\"\n~\", d = 0\"\n~\"}\"\n~\"\\n\"\n207^done\n(gdb)\n208-break-insert \"\\\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\\\":114\"\n208^done,bkpt={number=\"3\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"<MULTIPLE>\",times=\"0\",original-location=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp:114\"},{number=\"3.1\",enabled=\"y\",addr=\"0x0000000000401daa\",func=\"main(int, char**)\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"114\",thread-groups=[\"i1\"]},{number=\"3.2\",enabled=\"y\",addr=\"0x000000000040212b\",func=\"scoreSSE(Node const*, Node const*)\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"114\",thread-groups=[\"i1\"]}\n(gdb)\n209-exec-continue\n209^running\n*running,thread-id=\"1\"\n(gdb)\n=breakpoint-modified,bkpt={number=\"2\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"<MULTIPLE>\",times=\"2\",original-location=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp:105\"},{number=\"2.1\",enabled=\"y\",addr=\"0x0000000000401d79\",func=\"main(int, char**)\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"105\",thread-groups=[\"i1\"]},{number=\"2.2\",enabled=\"y\",addr=\"0x00000000004020d8\",func=\"scoreSSE(Node const*, Node const*)\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"105\",thread-groups=[\"i1\"]}\n*stopped,reason=\"breakpoint-hit\",disp=\"keep\",bkptno=\"2\",frame={addr=\"0x0000000000401d79\",func=\"operator[]\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"__n\",value=\"1470988229219219200\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}],file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"},thread-id=\"1\",stopped-threads=\"all\",core=\"3\"\n210-thread-select 1\n210^done,new-thread-id=\"1\",frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"__n\",value=\"1470988229219219200\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}],file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"}\n(gdb)\n211-stack-info-frame\n211^done,frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"}\n(gdb)\n212-stack-list-frames\n212^done,stack=[frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"},frame={level=\"1\",addr=\"0x0000000000401d79\",func=\"main\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"60\"}]\n(gdb)\n213-stack-list-arguments 1\n213^done,stack-args=[frame={level=\"0\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}]},frame={level=\"1\",args=[{name=\"argc\",value=\"6305872\"},{name=\"argv\",value=\"0x7ffff75b79f0 <_IO_stdfile_1_lock>\"}]}]\n(gdb)\n214-thread-info\n214^done,threads=[{id=\"1\",target-id=\"process 25928\",name=\"maximumparsimon\",frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"__n\",value=\"1470988229219219200\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}],file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"},state=\"stopped\",core=\"3\"}],current-thread-id=\"1\"\n(gdb)\n215-thread-list-ids\n215^done,thread-ids={thread-id=\"1\"},current-thread-id=\"1\",number-of-threads=\"1\"\n(gdb)\n216-var-update --all-values *\n216^done,changelist=[]\n(gdb)\n217-stack-list-locals 0\n217^done,locals=[]\n(gdb)\n218-exec-continue\n218^running\n*running,thread-id=\"1\"\n(gdb)\n=breakpoint-modified,bkpt={number=\"2\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"<MULTIPLE>\",times=\"3\",original-location=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp:105\"},{number=\"2.1\",enabled=\"y\",addr=\"0x0000000000401d79\",func=\"main(int, char**)\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"105\",thread-groups=[\"i1\"]},{number=\"2.2\",enabled=\"y\",addr=\"0x00000000004020d8\",func=\"scoreSSE(Node const*, Node const*)\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"105\",thread-groups=[\"i1\"]}\n*stopped,reason=\"breakpoint-hit\",disp=\"keep\",bkptno=\"2\",frame={addr=\"0x0000000000401d79\",func=\"operator[]\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"__n\",value=\"1470988229219219200\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}],file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"},thread-id=\"1\",stopped-threads=\"all\",core=\"3\"\n219-thread-select 1\n219^done,new-thread-id=\"1\",frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"__n\",value=\"1470988229219219200\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}],file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"}\n(gdb)\n220-stack-info-frame\n220^done,frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"}\n(gdb)\n221-stack-list-frames\n221^done,stack=[frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"},frame={level=\"1\",addr=\"0x0000000000401d79\",func=\"main\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"60\"}]\n(gdb)\n222-stack-list-arguments 1\n222^done,stack-args=[frame={level=\"0\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}]},frame={level=\"1\",args=[{name=\"argc\",value=\"6305872\"},{name=\"argv\",value=\"0x7ffff75b79f0 <_IO_stdfile_1_lock>\"}]}]\n(gdb)\n223-thread-info\n223^done,threads=[{id=\"1\",target-id=\"process 25928\",name=\"maximumparsimon\",frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"__n\",value=\"1470988229219219200\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}],file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"},state=\"stopped\",core=\"3\"}],current-thread-id=\"1\"\n(gdb)\n224-thread-list-ids\n224^done,thread-ids={thread-id=\"1\"},current-thread-id=\"1\",number-of-threads=\"1\"\n(gdb)\n225-var-update --all-values *\n225^done,changelist=[]\n(gdb)\n226-stack-list-locals 0\n226^done,locals=[]\n(gdb)\n227-exec-continue\n227^running\n*running,thread-id=\"1\"\n(gdb)\n=breakpoint-modified,bkpt={number=\"2\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"<MULTIPLE>\",times=\"4\",original-location=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp:105\"},{number=\"2.1\",enabled=\"y\",addr=\"0x0000000000401d79\",func=\"main(int, char**)\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"105\",thread-groups=[\"i1\"]},{number=\"2.2\",enabled=\"y\",addr=\"0x00000000004020d8\",func=\"scoreSSE(Node const*, Node const*)\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"105\",thread-groups=[\"i1\"]}\n*stopped,reason=\"breakpoint-hit\",disp=\"keep\",bkptno=\"2\",frame={addr=\"0x0000000000401d79\",func=\"operator[]\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"__n\",value=\"1470988229219219200\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}],file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"},thread-id=\"1\",stopped-threads=\"all\",core=\"2\"\n228-thread-select 1\n228^done,new-thread-id=\"1\",frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"__n\",value=\"1470988229219219200\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}],file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"}\n(gdb)\n229-stack-info-frame\n229^done,frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"}\n(gdb)\n230-stack-list-frames\n230^done,stack=[frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"},frame={level=\"1\",addr=\"0x0000000000401d79\",func=\"main\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"60\"}]\n(gdb)\n231-stack-list-arguments 1\n231^done,stack-args=[frame={level=\"0\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}]},frame={level=\"1\",args=[{name=\"argc\",value=\"6305872\"},{name=\"argv\",value=\"0x7ffff75b79f0 <_IO_stdfile_1_lock>\"}]}]\n(gdb)\n232-thread-info\n232^done,threads=[{id=\"1\",target-id=\"process 25928\",name=\"maximumparsimon\",frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"__n\",value=\"1470988229219219200\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}],file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"},state=\"stopped\",core=\"2\"}],current-thread-id=\"1\"\n(gdb)\n233-thread-list-ids\n233^done,thread-ids={thread-id=\"1\"},current-thread-id=\"1\",number-of-threads=\"1\"\n(gdb)\n234-var-update --all-values *\n234^done,changelist=[]\n(gdb)\n235-stack-list-locals 0\n235^done,locals=[]\n(gdb)\n236-exec-continue\n236^running\n*running,thread-id=\"1\"\n(gdb)\n=breakpoint-modified,bkpt={number=\"2\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"<MULTIPLE>\",times=\"5\",original-location=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp:105\"},{number=\"2.1\",enabled=\"y\",addr=\"0x0000000000401d79\",func=\"main(int, char**)\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"105\",thread-groups=[\"i1\"]},{number=\"2.2\",enabled=\"y\",addr=\"0x00000000004020d8\",func=\"scoreSSE(Node const*, Node const*)\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"105\",thread-groups=[\"i1\"]}\n*stopped,reason=\"breakpoint-hit\",disp=\"keep\",bkptno=\"2\",frame={addr=\"0x0000000000401d79\",func=\"operator[]\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"__n\",value=\"1470988229219219200\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}],file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"},thread-id=\"1\",stopped-threads=\"all\",core=\"2\"\n237-thread-select 1\n237^done,new-thread-id=\"1\",frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"__n\",value=\"1470988229219219200\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}],file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"}\n(gdb)\n238-stack-info-frame\n238^done,frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"}\n(gdb)\n239-stack-list-frames\n239^done,stack=[frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"},frame={level=\"1\",addr=\"0x0000000000401d79\",func=\"main\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"60\"}]\n(gdb)\n240-stack-list-arguments 1\n240^done,stack-args=[frame={level=\"0\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}]},frame={level=\"1\",args=[{name=\"argc\",value=\"6305872\"},{name=\"argv\",value=\"0x7ffff75b79f0 <_IO_stdfile_1_lock>\"}]}]\n(gdb)\n241-thread-info\n241^done,threads=[{id=\"1\",target-id=\"process 25928\",name=\"maximumparsimon\",frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"__n\",value=\"1470988229219219200\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}],file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"},state=\"stopped\",core=\"2\"}],current-thread-id=\"1\"\n(gdb)\n242-thread-list-ids\n242^done,thread-ids={thread-id=\"1\"},current-thread-id=\"1\",number-of-threads=\"1\"\n(gdb)\n243-var-update --all-values *\n243^done,changelist=[]\n(gdb)\n244-stack-list-locals 0\n244^done,locals=[]\n(gdb)\n245-exec-continue\n245^running\n*running,thread-id=\"1\"\n(gdb)\n=breakpoint-modified,bkpt={number=\"2\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"<MULTIPLE>\",times=\"6\",original-location=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp:105\"},{number=\"2.1\",enabled=\"y\",addr=\"0x0000000000401d79\",func=\"main(int, char**)\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"105\",thread-groups=[\"i1\"]},{number=\"2.2\",enabled=\"y\",addr=\"0x00000000004020d8\",func=\"scoreSSE(Node const*, Node const*)\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"105\",thread-groups=[\"i1\"]}\n*stopped,reason=\"breakpoint-hit\",disp=\"keep\",bkptno=\"2\",frame={addr=\"0x0000000000401d79\",func=\"operator[]\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"__n\",value=\"1470988229219219200\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}],file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"},thread-id=\"1\",stopped-threads=\"all\",core=\"2\"\n246-thread-select 1\n246^done,new-thread-id=\"1\",frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"__n\",value=\"1470988229219219200\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}],file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"}\n(gdb)\n247-stack-info-frame\n247^done,frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"}\n(gdb)\n248-stack-list-frames\n248^done,stack=[frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"},frame={level=\"1\",addr=\"0x0000000000401d79\",func=\"main\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"60\"}]\n(gdb)\n249-stack-list-arguments 1\n249^done,stack-args=[frame={level=\"0\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}]},frame={level=\"1\",args=[{name=\"argc\",value=\"6305872\"},{name=\"argv\",value=\"0x7ffff75b79f0 <_IO_stdfile_1_lock>\"}]}]\n(gdb)\n250-thread-info\n250^done,threads=[{id=\"1\",target-id=\"process 25928\",name=\"maximumparsimon\",frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"__n\",value=\"1470988229219219200\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}],file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"},state=\"stopped\",core=\"2\"}],current-thread-id=\"1\"\n(gdb)\n251-thread-list-ids\n251^done,thread-ids={thread-id=\"1\"},current-thread-id=\"1\",number-of-threads=\"1\"\n(gdb)\n252-var-update --all-values *\n252^done,changelist=[]\n(gdb)\n253-stack-list-locals 0\n253^done,locals=[]\n(gdb)\n254-exec-continue\n254^running\n*running,thread-id=\"1\"\n(gdb)\n=breakpoint-modified,bkpt={number=\"2\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"<MULTIPLE>\",times=\"7\",original-location=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp:105\"},{number=\"2.1\",enabled=\"y\",addr=\"0x0000000000401d79\",func=\"main(int, char**)\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"105\",thread-groups=[\"i1\"]},{number=\"2.2\",enabled=\"y\",addr=\"0x00000000004020d8\",func=\"scoreSSE(Node const*, Node const*)\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"105\",thread-groups=[\"i1\"]}\n*stopped,reason=\"breakpoint-hit\",disp=\"keep\",bkptno=\"2\",frame={addr=\"0x0000000000401d79\",func=\"operator[]\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"__n\",value=\"1470988229219219200\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}],file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"},thread-id=\"1\",stopped-threads=\"all\",core=\"2\"\n255-thread-select 1\n255^done,new-thread-id=\"1\",frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"__n\",value=\"1470988229219219200\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}],file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"}\n(gdb)\n256-stack-info-frame\n256^done,frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"}\n(gdb)\n257-stack-list-frames\n257^done,stack=[frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"},frame={level=\"1\",addr=\"0x0000000000401d79\",func=\"main\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"60\"}]\n(gdb)\n258-stack-list-arguments 1\n258^done,stack-args=[frame={level=\"0\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}]},frame={level=\"1\",args=[{name=\"argc\",value=\"6305872\"},{name=\"argv\",value=\"0x7ffff75b79f0 <_IO_stdfile_1_lock>\"}]}]\n(gdb)\n259-thread-info\n259^done,threads=[{id=\"1\",target-id=\"process 25928\",name=\"maximumparsimon\",frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"__n\",value=\"1470988229219219200\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}],file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"},state=\"stopped\",core=\"2\"}],current-thread-id=\"1\"\n(gdb)\n260-thread-list-ids\n260^done,thread-ids={thread-id=\"1\"},current-thread-id=\"1\",number-of-threads=\"1\"\n(gdb)\n261-var-update --all-values *\n261^done,changelist=[]\n(gdb)\n262-stack-list-locals 0\n262^done,locals=[]\n(gdb)\n263-exec-continue\n263^running\n*running,thread-id=\"1\"\n(gdb)\n=breakpoint-modified,bkpt={number=\"2\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"<MULTIPLE>\",times=\"8\",original-location=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp:105\"},{number=\"2.1\",enabled=\"y\",addr=\"0x0000000000401d79\",func=\"main(int, char**)\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"105\",thread-groups=[\"i1\"]},{number=\"2.2\",enabled=\"y\",addr=\"0x00000000004020d8\",func=\"scoreSSE(Node const*, Node const*)\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"105\",thread-groups=[\"i1\"]}\n*stopped,reason=\"breakpoint-hit\",disp=\"keep\",bkptno=\"2\",frame={addr=\"0x0000000000401d79\",func=\"operator[]\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"__n\",value=\"1470988229219219200\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}],file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"},thread-id=\"1\",stopped-threads=\"all\",core=\"1\"\n264-thread-select 1\n264^done,new-thread-id=\"1\",frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"__n\",value=\"1470988229219219200\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}],file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"}\n(gdb)\n265-stack-info-frame\n265^done,frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"}\n(gdb)\n266-stack-list-frames\n266^done,stack=[frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"},frame={level=\"1\",addr=\"0x0000000000401d79\",func=\"main\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"60\"}]\n(gdb)\n267-stack-list-arguments 1\n267^done,stack-args=[frame={level=\"0\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}]},frame={level=\"1\",args=[{name=\"argc\",value=\"6305872\"},{name=\"argv\",value=\"0x7ffff75b79f0 <_IO_stdfile_1_lock>\"}]}]\n(gdb)\n268-thread-info\n268^done,threads=[{id=\"1\",target-id=\"process 25928\",name=\"maximumparsimon\",frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"__n\",value=\"1470988229219219200\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}],file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"},state=\"stopped\",core=\"1\"}],current-thread-id=\"1\"\n(gdb)\n269-thread-list-ids\n269^done,thread-ids={thread-id=\"1\"},current-thread-id=\"1\",number-of-threads=\"1\"\n(gdb)\n270-var-update --all-values *\n270^done,changelist=[]\n(gdb)\n271-stack-list-locals 0\n271^done,locals=[]\n(gdb)\n272-break-insert \"\\\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\\\":106\"\n272^done,bkpt={number=\"4\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"<MULTIPLE>\",times=\"0\",original-location=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp:106\"},{number=\"4.1\",enabled=\"y\",addr=\"0x0000000000401d79\",func=\"main(int, char**)\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"106\",thread-groups=[\"i1\"]},{number=\"4.2\",enabled=\"y\",addr=\"0x00000000004020d8\",func=\"scoreSSE(Node const*, Node const*)\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"106\",thread-groups=[\"i1\"]}\n(gdb)\n273-exec-continue\n273^running\n*running,thread-id=\"1\"\n(gdb)\n=breakpoint-modified,bkpt={number=\"2\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"<MULTIPLE>\",times=\"9\",original-location=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp:105\"},{number=\"2.1\",enabled=\"y\",addr=\"0x0000000000401d79\",func=\"main(int, char**)\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"105\",thread-groups=[\"i1\"]},{number=\"2.2\",enabled=\"y\",addr=\"0x00000000004020d8\",func=\"scoreSSE(Node const*, Node const*)\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"105\",thread-groups=[\"i1\"]}\n=breakpoint-modified,bkpt={number=\"4\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"<MULTIPLE>\",times=\"1\",original-location=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp:106\"},{number=\"4.1\",enabled=\"y\",addr=\"0x0000000000401d79\",func=\"main(int, char**)\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"106\",thread-groups=[\"i1\"]},{number=\"4.2\",enabled=\"y\",addr=\"0x00000000004020d8\",func=\"scoreSSE(Node const*, Node const*)\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"106\",thread-groups=[\"i1\"]}\n*stopped,reason=\"breakpoint-hit\",disp=\"keep\",bkptno=\"2\",frame={addr=\"0x0000000000401d79\",func=\"operator[]\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"__n\",value=\"1470988229219219200\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}],file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"},thread-id=\"1\",stopped-threads=\"all\",core=\"0\"\n274-thread-select 1\n274^done,new-thread-id=\"1\",frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"__n\",value=\"1470988229219219200\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}],file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"}\n(gdb)\n275-stack-info-frame\n275^done,frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"}\n(gdb)\n276-stack-list-frames\n276^done,stack=[frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"},frame={level=\"1\",addr=\"0x0000000000401d79\",func=\"main\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"60\"}]\n(gdb)\n277-stack-list-arguments 1\n277^done,stack-args=[frame={level=\"0\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}]},frame={level=\"1\",args=[{name=\"argc\",value=\"6305872\"},{name=\"argv\",value=\"0x7ffff75b79f0 <_IO_stdfile_1_lock>\"}]}]\n(gdb)\n278-thread-info\n278^done,threads=[{id=\"1\",target-id=\"process 25928\",name=\"maximumparsimon\",frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"__n\",value=\"1470988229219219200\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}],file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"},state=\"stopped\",core=\"0\"}],current-thread-id=\"1\"\n(gdb)\n279-thread-list-ids\n279^done,thread-ids={thread-id=\"1\"},current-thread-id=\"1\",number-of-threads=\"1\"\n(gdb)\n280-var-update --all-values *\n280^done,changelist=[]\n(gdb)\n281-stack-list-locals 0\n281^done,locals=[]\n(gdb)\n282-exec-continue\n282^running\n*running,thread-id=\"1\"\n(gdb)\n=breakpoint-modified,bkpt={number=\"2\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"<MULTIPLE>\",times=\"10\",original-location=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp:105\"},{number=\"2.1\",enabled=\"y\",addr=\"0x0000000000401d79\",func=\"main(int, char**)\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"105\",thread-groups=[\"i1\"]},{number=\"2.2\",enabled=\"y\",addr=\"0x00000000004020d8\",func=\"scoreSSE(Node const*, Node const*)\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"105\",thread-groups=[\"i1\"]}\n=breakpoint-modified,bkpt={number=\"4\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"<MULTIPLE>\",times=\"2\",original-location=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp:106\"},{number=\"4.1\",enabled=\"y\",addr=\"0x0000000000401d79\",func=\"main(int, char**)\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"106\",thread-groups=[\"i1\"]},{number=\"4.2\",enabled=\"y\",addr=\"0x00000000004020d8\",func=\"scoreSSE(Node const*, Node const*)\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"106\",thread-groups=[\"i1\"]}\n*stopped,reason=\"breakpoint-hit\",disp=\"keep\",bkptno=\"2\",frame={addr=\"0x0000000000401d79\",func=\"operator[]\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"__n\",value=\"1470988229219219200\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}],file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"},thread-id=\"1\",stopped-threads=\"all\",core=\"1\"\n283-thread-select 1\n283^done,new-thread-id=\"1\",frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"__n\",value=\"1470988229219219200\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}],file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"}\n(gdb)\n284-stack-info-frame\n284^done,frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"}\n(gdb)\n285-stack-list-frames\n285^done,stack=[frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"},frame={level=\"1\",addr=\"0x0000000000401d79\",func=\"main\",file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"60\"}]\n(gdb)\n286-stack-list-arguments 1\n286^done,stack-args=[frame={level=\"0\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}]},frame={level=\"1\",args=[{name=\"argc\",value=\"6305872\"},{name=\"argv\",value=\"0x7ffff75b79f0 <_IO_stdfile_1_lock>\"}]}]\n(gdb)\n287-thread-info\n287^done,threads=[{id=\"1\",target-id=\"process 25928\",name=\"maximumparsimon\",frame={level=\"0\",addr=\"0x0000000000401d79\",func=\"operator[]\",args=[{name=\"this\",value=\"0x604180\"},{name=\"this\",value=\"0x604180\"},{name=\"__n\",value=\"1470988229219219200\"},{name=\"nodeA\",value=\"<optimized out>\"},{name=\"nodeB\",value=\"<optimized out>\"}],file=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",fullname=\"/home/jesse/Documents/git_projects/maximum-parsimony/src/main.cpp\",line=\"107\"},state=\"stopped\",core=\"1\"}],current-thread-id=\"1\"\n(gdb)\n288-thread-list-ids\n288^done,thread-ids={thread-id=\"1\"},current-thread-id=\"1\",number-of-threads=\"1\"\n(gdb)\n289-var-update --all-values *\n289^done,changelist=[]\n(gdb)\n290-stack-list-locals 0\n290^done,locals=[]\n(gdb)\n",
+			"settings":
+			{
+				"buffer_size": 46048,
+				"line_ending": "Unix",
+				"name": "GDB Session",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "GNU gdb (GDB) 7.6.1-ubuntu\nCopyright (C) 2013 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.  Type \"show copying\"\nand \"show warranty\" for details.\nThis GDB was configured as \"x86_64-linux-gnu\".\nFor bug reporting instructions, please see:\n<http://www.gnu.org/software/gdb/bugs/>...\nReading symbols from /home/jesse/Documents/git_projects/maximum-parsimony/src/maximumparsimony...done.\nStarting program: /home/jesse/Documents/git_projects/maximum-parsimony/src/./maximumparsimony \n&\"warning: GDB: Failed to set controlling terminal: Inappropriate ioctl for device\\n\"\nComparison of first two children: 7\n$1 = {i = {0, 1045149306}, d = 1.2904777690891933e-08}\n$2 = {i = {0, 0}, d = 0}\n",
+			"settings":
+			{
+				"buffer_size": 864,
+				"line_ending": "Unix",
+				"name": "GDB Console",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "-std::vector<Node*, std::allocator<Node*> > * this = 0x604180\n    -std::_Vector_base<Node*, std::allocator<Node*> > std::_Vector_base<Node*, std::allocator<Node*> > = {...}\n        +std::_Vector_base<Node*, std::allocator<Node*> >::_Vector_impl _M_impl = {...}\n-std::vector<Node*, std::allocator<Node*> > * this = 0x604180\n    +std::_Vector_base<Node*, std::allocator<Node*> > std::_Vector_base<Node*, std::allocator<Node*> > = {...}\n-const Node * nodeA = <optimized out>\n    +uint8_t * sequence_ = \n    +Node * left_ = \n    +Node * right_ = \n-const Node * nodeB = <optimized out>\n    +uint8_t * sequence_ = \n    +Node * left_ = \n    +Node * right_ = \n",
+			"settings":
+			{
+				"buffer_size": 652,
+				"line_ending": "Unix",
+				"name": "GDB Variables",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "operator[](this = 0x604180,this = 0x604180,nodeA = <optimized out>,nodeB = <optimized out>,);\nmain(argc = 6305872,argv = 0x7ffff75b79f0 <_IO_stdfile_1_lock>,);\n",
+			"settings":
+			{
+				"buffer_size": 160,
+				"line_ending": "Unix",
+				"name": "GDB Callstack",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "001 -    stopped - operator[](this = 0x604180, this = 0x604180, __n = 1470988229219219200, nodeA = <optimized out>, nodeB = <optimized out>);\n",
+			"settings":
+			{
+				"buffer_size": 142,
+				"line_ending": "Unix",
+				"name": "GDB Threads",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix",
+				"name": "GDB Breakpoints",
+				"read_only": true,
+				"scratch": true
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 54.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"subl",
+				"SublimeGDB: Start Debugging"
+			],
+			[
+				"sub",
+				"SublimeGDB: Start Debugging"
+			],
+			[
+				"sublime",
+				"SublimeGDB: Start Debugging"
+			],
 			[
 				"Package Control: inst",
 				"Package Control: Install Package"
@@ -736,6 +830,9 @@
 	},
 	"file_history":
 	[
+		"/home/jesse/Documents/git_projects/maximum-parsimony/src/maximum-parsimony.sublime-project",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/reschedule.sh",
+		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/temp.sh",
 		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Modeling/DataBuffers/ColorBuffer.cpp",
 		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Modeling/DataBuffers/ColorBuffer.hpp",
 		"/home/jesse/Documents/git_projects/Multibrot-3D/src/OpenGL renderer/Modeling/DataBuffers/DataBuffer.hpp",
@@ -815,7 +912,6 @@
 		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/CMakeLists.txt",
 		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/ClangCompileRun.sh",
 		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/clean.sh",
-		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/reschedule.sh",
 		"/home/jesse/Documents/git_projects/Multibrot-3D/src/Multibrot renderer/CMakeCache.txt",
 		"/home/jesse/Documents/git_projects/Buddhabrot/src/clean.sh",
 		"/home/jesse/Documents/git_projects/Buddhabrot/src/compileRunLocal.sh",
@@ -861,9 +957,7 @@
 		"/home/jesse/Documents/git_projects/GlucoPro/src/hippocraticapps/glucopro/adapters/ImageAdapter.java",
 		"/home/jesse/Documents/git_projects/GlucoPro/src/hippocraticapps/glucopro/adapters/LabeledImage.java",
 		"/home/jesse/Documents/git_projects/GlucoPro/src/hippocraticapps/glucopro/bluetooth/BluetoothChat.java",
-		"/home/jesse/Documents/git_projects/GlucoPro/src/hippocraticapps/glucopro/bluetooth/BluetoothChatService.java",
-		"/home/jesse/Documents/git_projects/GlucoPro/src/hippocraticapps/glucopro/bluetooth/BluetoothConnectListener.java",
-		"/home/jesse/Documents/git_projects/GlucoPro/src/hippocraticapps/glucopro/bluetooth/DeviceListActivity.java"
+		"/home/jesse/Documents/git_projects/GlucoPro/src/hippocraticapps/glucopro/bluetooth/BluetoothChatService.java"
 	],
 	"find":
 	{
@@ -929,6 +1023,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"list",
+			"List",
+			"__m128",
+			"unsigned long",
 			"a program that displays 3D views of Folding@home proteins.",
 			"a program",
 			"Folding Atomata",
@@ -1052,11 +1150,7 @@
 			"Ling2011",
 			"Ling2012",
 			"Bauer2007",
-			" (",
-			"80",
-			"https",
-			"80",
-			"443"
+			" ("
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1094,15 +1188,15 @@
 					"file": "main.cpp",
 					"settings":
 					{
-						"buffer_size": 4241,
+						"buffer_size": 5985,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3160,
-								3160
+								2927,
+								2927
 							]
 						],
 						"settings":
@@ -1201,25 +1295,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2760.0,
+						"translation.y": 2396.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/reschedule.sh",
+					"file": "main.hpp",
 					"settings":
 					{
-						"buffer_size": 572,
+						"buffer_size": 702,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								292,
-								292
+								613,
+								613
 							]
 						],
 						"settings":
@@ -1313,126 +1407,7 @@
 								"Ruby on Rails": "ruby"
 							},
 							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 69.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/home/jesse/Documents/git_projects/Multibrot-3D/src/Converter/temp.sh",
-					"settings":
-					{
-						"buffer_size": 418,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								205,
-								205
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": true,
-							"sublimelinter_gutter_marks_theme": "simple",
-							"sublimelinter_mark_style": "none",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/C++/C++.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1441,19 +1416,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "maximum-parsimony.sublime-project",
 					"settings":
 					{
-						"buffer_size": 302,
+						"buffer_size": 285,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								94,
-								94
+								196,
+								196
 							]
 						],
 						"settings":
@@ -1554,6 +1529,512 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/jesse/.config/sublime-text-2/Packages/SublimeGDB/SublimeGDB.sublime-settings",
+					"settings":
+					{
+						"buffer_size": 3739,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/jesse/.config/sublime-text-2/Packages/User/SublimeGDB.sublime-settings",
+					"settings":
+					{
+						"buffer_size": 138,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								21,
+								21
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/home/jesse/.config/sublime-text-2/Packages/SublimeGDB/Default.sublime-keymap",
+					"settings":
+					{
+						"buffer_size": 2679,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1725.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"settings":
+					{
+						"buffer_size": 46048,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								46048,
+								46048
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SublimeGDB/gdb_session.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 851.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"settings":
+					{
+						"buffer_size": 864,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								864,
+								864
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 69.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"settings":
+					{
+						"buffer_size": 652,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								652,
+								652
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 69.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"settings":
+					{
+						"buffer_size": 160,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								160,
+								160
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"settings":
+					{
+						"buffer_size": 142,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								142,
+								142
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
 				}
 			]
 		}
@@ -1575,6 +2056,12 @@
 				0,
 				1,
 				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
 			]
 		],
 		"cols":
@@ -1585,6 +2072,7 @@
 		"rows":
 		[
 			0.0,
+			0.442470960929,
 			1.0
 		]
 	},
@@ -1622,6 +2110,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 343.0,
+	"side_bar_width": 304.0,
 	"status_bar_visible": true
 }
